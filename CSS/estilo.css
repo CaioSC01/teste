@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.Sidebar {
+  float: left;
+  width: 250px;
+  padding: 10px 10px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #5f82b3;
+  overflow-x: hidden;
+}
+
+.Sidebar-wraper {
+  padding-bottom: 300px;
+}
+
+.Sidebar__menu {
+  margin: 20px 0;
+  color: #2f3659;
+}
+
+.Sidebar__logo img {
+  max-width: 75px;
+  width: 100%;
+  margin-left: 70px;
+}
+
+.Sidebar__menu a {
+  color: #212640;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.Sidebar__menu svg {
+  margin: 0 20px;
+}
+.Sidebar__menu a:hover {
+  color: honeydew;
+}
+
+.Sidebar__menu a.Sidebar__menu__selecionado {
+  color: #15162c;
+  background-color: #cfe3ff;
+  border-radius: 4px;
+}
+
+.Sidebar__menu__item {
+  margin-top: 12px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.Sidebar__menu p.Sidebar__menu__title {
+  color: #2f3659;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.Sidebar__menu__item__componente {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+  color: #212640;
+  font-weight: bold;
+  background-color: #cfe3ff;
+  border-radius: 20px;
+}
+.AA:hover {
+  color: #2f3659;
+  color: honeydew;
+}
+
+.Sidebar__menu__item span:hover {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 10px;
+  color: honeydew;
+}
+
+.Sidebar__menu__item img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.Sidebar__playlists {
+  padding: 20px 0;
+  border-top: 1px solid #212640;
+}
+
+.Sidebar__playlists a {
+  margin: 10px 0;
+  display: block;
+  color: #0e0019;
+  text-decoration: none;
+}
+
+.Sidebar__playlists a:hover {
+  color: white;
+}
+
+/*Parte principal do app*/
+
+.Main {
+  width: calc(100% - 250px);
+  background-color: #153359;
+  height: 100%;
+
+  float: left;
+  padding: 15px 50px;
+  overflow-y: auto;
+}
+
+.Main__row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.Main-wraper {
+  padding-bottom: 200px;
+}
+
+.Main__row__title {
+  width: 100%;
+}
+
+.Main__row__title h2 {
+  color: #f2f2f2;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.Main__col {
+  cursor: pointer;
+  width: 10%;
+  margin-right: 1%;
+  margin-top: 20px;
+
+  background-color: #23405f;
+  border-radius: 8px;
+
+  padding: 10px;
+
+  text-align: center;
+}
+
+.Main__col h3:hover {
+  color: #0d0d0d;
+  margin: 8px 0;
+  color: aliceblue;
+}
+
+.Main__col p {
+  color: rgb(100, 100, 100);
+  margin: 8px 0;
+  font-size: 13px;
+  text-align: left;
+}
+.A1 {
+  width: 100%;
+  text-align: center;
+}
+.A2 {
+  width: 65%;
+  text-align: center;
+}
+.AA2:hover {
+  color: aliceblue;
+}
+
+.Player {
+  width: 100%;
+  padding: 20px;
+  height: 130px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  background-color: #23405f;
+}
+
+.Player__artist {
+  width: 20%;
+}
+
+.Player__artist img {
+  max-width: 70px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Player__artist h3 {
+  display: inline-block;
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.Player__artist h3 > span {
+  color: rgb(200, 200, 200);
+  font-size: 13px;
+}
+
+.Player__control {
+  width: 70%;
+  text-align: center;
+}
+
+.Player__control__buttons a {
+  color: white;
+  margin: 8px 15px;
+  font-size: 18px;
+}
+
+.Player__control__progress {
+  width: 100%;
+  max-width: 600px;
+  height: 7px;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 8px;
+  display: inline-block;
+  background: rgb(130, 130, 130);
+}
+
+.Player__control__progress_2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 7px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+@media screen and (max-width: 1700px) {
+  .Main__col {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Main {
+    width: 100%;
+  }
+  .Sidebar {
+    display: none;
+  }
+  .Main__col {
+    width: 48%;
+    margin-right: 2%;
+  }
+}
